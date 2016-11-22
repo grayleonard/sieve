@@ -1,0 +1,14 @@
+{
+  "name": "sieve",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha test/index.js"
+  },
+  "author": "Gray Leonard",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^3.1.2"
+  }
+}
