@@ -104,6 +104,10 @@ describe('Search', function() {
 	})
 	it('should search by a mix of types', function () {
 		sieve.search.setQuery('public 1 true')
-		assert.equal(4, sieve.search.run()[0].score)
+		assert.equal(5, sieve.search.run()[0].score)
+	})
+	it('should sort by score', function() {
+		var res = sieve.search.run()
+		assert.equal(true, res[0].score > res[1].score)
 	})
 })
